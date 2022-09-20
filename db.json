@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "sunil",
+      "lastName": "naval",
+      "email": "naval1233@gmail.com",
+      "mobile": "9845525112",
+      "salary": "$12000"
+    },
+    {
+      "id": 2,
+      "firstName": "Deepak ",
+      "lastName": "Yadav",
+      "email": "deepak.yadav@gmail.com",
+      "mobile": "9845259525",
+      "salary": "$15000"
+    },
+    {
+      "id": 3,
+      "firstName": "Sikandar",
+      "lastName": "Alam",
+      "email": "sikandar.alam@gmail.com",
+      "mobile": "978458526",
+      "salary": "$72000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
