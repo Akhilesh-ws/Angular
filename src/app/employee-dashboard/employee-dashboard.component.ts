@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { ApiService } from '../shared/api.service';
 import { EmployeeModel } from './employee-dashboard.model';
@@ -11,7 +12,6 @@ import { EmployeeModel } from './employee-dashboard.model';
 })
 export class EmployeeDashboardComponent implements OnInit {
   formValue !:FormGroup;
- 
   employeeModelObj :EmployeeModel=new EmployeeModel();
   employeeData!: any;
   showAdd!:boolean;
@@ -19,7 +19,7 @@ export class EmployeeDashboardComponent implements OnInit {
   email= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-  constructor(private formbuilder:FormBuilder,private api :ApiService) { 
+  constructor(private formbuilder:FormBuilder,private api :ApiService, private router:Router) { 
    
   }
 
@@ -30,7 +30,6 @@ export class EmployeeDashboardComponent implements OnInit {
       email:['',[Validators.pattern(this.email)]],
       mobile:['',  [Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$'),Validators.maxLength(10)]],
       salary:['',Validators.required]
-
     })
     this.getAllEmployee();
   }
@@ -65,6 +64,8 @@ export class EmployeeDashboardComponent implements OnInit {
 
     this.api.getEmployee().subscribe(res=>{
       this.employeeData=res;
+      console.log( "akkhkhiljjhhjhhjjhhbjh"+this.employeeData);
+      
     })
   }
   deleteEmployee(row :any){

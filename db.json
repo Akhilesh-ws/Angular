@@ -6,7 +6,7 @@
       "lastName": "naval",
       "email": "naval1233@gmail.com",
       "mobile": "9845525112",
-      "salary": "$12000"
+      "salary": "$1200"
     },
     {
       "id": 2,
@@ -23,9 +23,61 @@
       "email": "sikandar.alam@gmail.com",
       "mobile": "978458526",
       "salary": "$72000"
+    },
+    {
+      "id": 4,
+      "firstName": "Rahul",
+      "lastName": "naval",
+      "email": "78455251@gmail.com",
+      "mobile": "8286356395",
+      "salary": "1000$"
+    },
+    {
+      "id": 5,
+      "firstName": "Sandeep",
+      "lastName": "yadav",
+      "email": "sandeep21@gmail.com",
+      "mobile": "8286454565",
+      "salary": "$20000"
     }
   ],
-  "comments": [],
+  "signupForUser": [
+    {
+      "fullName": "akhilesh",
+      "email": "4464964",
+      "password": "4654564",
+      "mobile": "78468749",
+      "id": 1
+    },
+    {
+      "fullName": "akhilesh",
+      "email": "4464964",
+      "password": "4654564",
+      "mobile": "78468749",
+      "id": 2
+    },
+    {
+      "fullName": "jhggdsgfghjkl",
+      "email": "",
+      "password": "",
+      "mobile": "jhfghjk;l'",
+      "id": 3
+    },
+    {
+      "fullName": "ghjk",
+      "email": "jhhhj",
+      "password": "khkj",
+      "mobile": "khgjg",
+      "id": 4
+    },
+    {
+      "fullName": "sunil",
+      "email": "suni@gmail.com",
+      "password": "123456",
+      "mobile": "222222222",
+      "id": 5
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
